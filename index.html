@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Devs</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <script type="text/javascript" src="./script.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +17,7 @@
                 <div class="user-data">
                     <div class="user-name">
                         <label for="name-textField">Nombre:</label>
-                        <input type="text" id="name-textField" name="name-textField" placeholder="Developer name">
+                        <input type="text" id="name-textField" name="name-textField" placeholder="Developer name" required>
                     </div>
                     <div class="user-avatar">
                         <label for="url-avatar">URL Avatar:</label>
@@ -27,7 +26,7 @@
                 </div>
                 <div class="user-description">
                     <label for="user-bio">Preséntate:</label>
-                    <textarea name="user-bio" id="user-bio" rows="2" placeholder="Biography"></textarea>
+                    <textarea name="user-bio" id="user-bio" rows="2" placeholder="Biography" required></textarea>
                 </div>
                 <div class="user-languages">
                     <label>Lenguajes:</label>
@@ -43,30 +42,11 @@
                     <label for="lang-MongoDB">MongoDB</label>
                 </div>
                 <div class="submit-button">
-                    <input type="button" value="Insertar" id="register-dev">
+                    <input type="submit" value="Insertar" id="register-dev">
                 </div>
             </form>
-            <div class="list-devs">
-                <div class="user">
-                    <div class="dev-data">
-                        <div class="dev-avatar">
-                            <img src="./user-icon.png" alt="dev1-avatar">
-                        </div>
-                        <div class="dev-information">
-                            <div class="dev-name-link">
-                                <a href="#" class="link-name">Carla</a>
-                            </div>
-                            <div class="icon-lang">
-                                <img src="./location.png" alt="html-icon" class="icons">
-                                <img src="./location.png" alt="js-icon" class="icons">
-                                <img src="./location.png" alt="css-icon" class="icons">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dev-description">
-                        Hola soy desarrollador front-end desde hace 5 años.
-                    </div>
-                </div>
+            <div id="list-devs">
+                <script text="text/javascript" src="./script.js"></script>
             </div>
         </div>
     </div>
